@@ -1,0 +1,92 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #f0f2f5;
+    text-align: center;
+}
+
+h1 {
+    color: #6f42c1;
+    margin-bottom: 30px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 15px;
+    max-width: 220px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.card:hover img,
+.card:active img {
+    transform: scale(1.05);
+}
+
+.card:hover,
+.card:active {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.card h2 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.card .description {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card .price {
+    font-weight: bold;
+    color: #d63384;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.card button {
+    background: #6f42c1;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.card button:hover {
+    background: #d63384;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+}
