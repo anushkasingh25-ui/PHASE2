@@ -3,56 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <link rel="stylesheet" href="feedback.css">
-    <title> FEEDBACK</title>
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="feedback.css">
 </head>
 <body>
 
-    
-    <header>
-        <h1> 💬Submit Your Feedback</h1>
-    </header>
+<div class="form-container">
+    <h2>Feedback Form</h2>
 
-    <nav>
-        <ul>
-        <li><a href="index.html">🏠HOME</a></li>
-        <li><a href="profile.html">🧑‍🎓PROFILE</a></li>
-        <li><a href="courses.html">📚 COURSES</a></li>
-        <li><a href="grade.html">⭐GRADES</a></li>
-        <li><a href="feedback.html">💬FEEDBACK</a></li>
-        <li><a href="contact.html">📞 CONTACT</a></li>
-        </ul>
-    </nav>
+    <form>
+        <label>Name</label>
+        <input type="text" placeholder="Your Name">
 
+        <label>Email</label>
+        <input type="email" placeholder="Your Email">
 
-    <main>
-        <form>
-            <label for="name">👤NAME:</label><br>
-            <input type="text" id="name" name="name"><br><br>
-            
-            <label for="email">✉️Email:</label><br>
-            <input type="email" id="email" name="email"><br><br>
-
-            <lable for="rating">⭐ Rate this portal:</lable><br>
-            <select id="rating" name="rating">
-            <option> Excellent</option> 
+        <label>Rating</label>
+        <select>
+            <option>Select Rating</option>
+            <option>Excellent</option>
             <option>Good</option>
             <option>Average</option>
-            <option>Poor</optionn>
+            <option>Poor</option>
+        </select>
 
-            </select><br><br>
+        <label>Comments</label>
+        <textarea placeholder="Your comments..."></textarea>
 
+        <button type="submit">Submit</button>
+    </form>
+</div>
 
-            <lable for="message">📝Feedback:</lable><br>
-            <textarea id="message" name ="message" rows="4" cols="40"></textarea><br><br>
-
-            <button type="submit"> 🚀 submit</button>
-        </form>
-    </main>
-
-    <footer>
-        <p> 2025 Student Portal.All Rights Reserved.</p>
-    </footer>
-    
 </body>
 </html>
